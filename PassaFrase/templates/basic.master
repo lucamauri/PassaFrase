@@ -1,0 +1,98 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="basic.master.vb" Inherits="PassaFrase.basic" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>PassaFrase - Genera sicurezza, in italiano</title>
+    <link rel="stylesheet" type="text/css" href="basic.css" />
+    <link rel="author" href="../humans.txt" />
+
+    <!-- RealFaviconGenerator START -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/graphics/favico/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/graphics/favico/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/graphics/favico/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/graphics/favico/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/graphics/favico/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/graphics/favico/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/graphics/favico/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/graphics/favico/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/graphics/favico/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" href="/graphics/favico/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/graphics/favico/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="/graphics/favico/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/graphics/favico/favicon-16x16.png" sizes="16x16" />
+    <link rel="manifest" href="/graphics/favico/manifest.json" />
+    <%--<link rel="mask-icon" href="/graphics/favico/safari-pinned-tab.svg" color="#5bbad5" />--%>
+    <link rel="mask-icon" href="/graphics/favico/safari-pinned-tab.svg" />
+    <link rel="shortcut icon" href="/graphics/favico/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#7aa229" />
+    <meta name="msapplication-TileImage" content="/graphics/favico/mstile-144x144.png" />
+    <meta name="msapplication-config" content="/graphics/favico/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- RealFaviconGenerator END -->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="description" content="PassaFrase - An italian language passphrase generator" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%-- <div id="logotopbar" class="centered70pc">
+            <img src="../graphics/logo/PassaFrase.png" />
+        </div>--%>
+        <div>
+            <asp:ContentPlaceHolder ID="CPHWorker" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>        
+        <div id="containergithub" class="genericcontainer">
+            <div class="centered60pc">
+                <h2>Open source su <em>GitHub</em></h2>
+                <div class="halfadiv">
+                    <p>
+                        <strong>PassaFrase</strong> è un progetto open source, disponibile collaborativamente su GitHub<br />
+                        Siete invitati a partecipare al progetto.
+                    </p>
+
+                    <p><a href="http://lucamauri.github.io/LightroomPresets">http://lucamauri.github.io/LightroomPresets</a></p>
+<!-- GitHub buttons BEGIN -->
+                        <iframe seamless="seamless" src="https://ghbtns.com/github-btn.html?user=lucamauri&repo=LightroomPresets&type=star&count=true" style="border-width: 0; width: 170px; height: 20px; overflow: hidden"></iframe>
+                        <br />
+                        <iframe seamless="seamless" src="https://ghbtns.com/github-btn.html?user=lucamauri&repo=LightroomPresets&type=watch&count=true&v=2" style="border-width: 0; width: 170px; height: 20px; overflow: hidden"></iframe>
+                        <br />
+                        <iframe seamless="seamless" src="https://ghbtns.com/github-btn.html?user=lucamauri&repo=LightroomPresets&type=fork&count=true" style="border-width: 0; width: 170px; height: 20px; overflow: hidden"></iframe>
+                        <br />
+                        <iframe seamless="seamless" src="https://ghbtns.com/github-btn.html?user=lucamauri&type=follow&count=true" style="border-width: 0; width: 170px; height: 20px; overflow: hidden"></iframe>
+                        <!-- GitHub buttons END -->
+                </div>
+                <div class="halfadiv">
+                    <a href="https://github.com/lucamauri/LightroomPresets" class="svg">
+                        
+                            <object data="/graphics/socialmedia/githubblack.svg" type="image/svg+xml" style="height:250px">
+                                <img src="/graphics/socialmedia/github.png" />
+                            </object>
+                     
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="containerfooter" class="genericcontainer">
+            <div class="centered60pc">
+                <div class="halfadiv">
+                    <p class="footerinfo">
+                        <em>PassaFrase</em> è un progetto opensource lanciato da <a href="www.lucamauri.com" target="_new">Luca Mauri</a>.<br />
+                        Luca Mauri, 2015-<%=DateTime.Now.Year.ToString%>
+                    </p>
+                </div>
+                <div class="halfadiv">
+                    <a href="http://humanstxt.org/">Humans.txt</a><br />
+                    <a href="../humans.txt">
+                        <img src="http://humanstxt.org/img/oficial-logos/humanstxt-transparent-color.png" /></a>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
