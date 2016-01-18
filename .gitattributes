@@ -67,4 +67,4 @@
 ###############################################################################
 
 $ cat .gitattributes
-PassaFraseCore/Dizionario/* linguist-vendored
+PassaFraseCore/Dizionario/* linguist-documentation
