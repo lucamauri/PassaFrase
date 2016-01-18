@@ -61,3 +61,10 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+###############################################################################
+# Custom override to ignore dictionary files
+###############################################################################
+
+$ cat .gitattributes
+PassaFraseCore/Dizionario/* linguist-vendored
