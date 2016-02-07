@@ -8,7 +8,7 @@ body {
     background-color: #1d1c22;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    font-weight:400;
+    font-weight: 400;
     color: white;
 }
 
@@ -24,7 +24,7 @@ h2 {
     font-size: 36pt;
     /*font-style: italic;*/
     font-weight: 400;
-    color: #7AA229;
+    color: #fab900;
 }
 
 p {
@@ -32,49 +32,138 @@ p {
     color: white;
 }
 
-
-a.svg {
-    position: relative;
-    display: inline-block;
+a {
+    border: 0;
 }
 
-    a.svg:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+    a:link {
+        color: #b27c00;
+        text-decoration: none;
     }
 
+    a:visited {
+        color: #ffd400;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: #ffd400;
+        text-decoration: none;
+    }
+
+    a.svg {
+        position: relative;
+        display: inline-block;
+    }
+
+        a.svg:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+h2 a:link {
+    color: black;
+    text-decoration: none;
+}
+
+h2 a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+h2 a:active {
+    color: black;
+    text-decoration: underline;
+}
+
+blockquote {
+  /*background: #1c1c1c;*/
+  border-left: 10px solid #fab900;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #b27c00;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
 
 #footer {
     background-color: white;
     color: black;
 }
 
-#containergithub{
-     background-color:black;
+#containergithub {
+    background-color: black;
 }
 
-#containerworker{
-    background-color:white;
-    color: black;    
+#containerworker {
+    background-color: white;
+    color: black;
 }
 
     #containerworker p {
-        color:black;
+        color: black;
     }
 
-#containerintro{
-    background-color:black;
+#containerintro {
+    background-color: black;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-#containerfooter{
-    background-color:#7AA229;
+#containerfooter {
+    background-color: #fffbd0;
 }
+
+    #containerfooter p {
+        color: black;
+    }
+
+#containerxkcd {
+    background-color: #4a4a4a;
+}
+
+#containerbottom {
+    background-color: #fab900;
+}
+
+#containertopmenu {
+    background-color: #4a4a4a;
+}
+
+    #containertopmenu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+
+    #containertopmenu li {
+        float: left;
+        padding: 15px;
+    }
+
 
 .centered60pc {
     width: 60%;
@@ -88,7 +177,7 @@ a.svg {
 
 .footerinfo {
     font-family: 'Lekton', monospace;
-    color:white;
+    color: white;
 }
 
 .genericcontainer {
@@ -103,16 +192,16 @@ a.svg {
     float: left;
 }
 
-.resulttable{
+.resulttable {
     font-family: 'Lekton', monospace;
-    color:black;
+    color: black;
     border-collapse: collapse;
-    border-color:#1d1c22;
-    border-width:1px;
+    border-color: #1d1c22;
+    border-width: 1px;
 }
 
-.resulttable td, th {
-  border: 1px solid #999;
-  padding: 0.5rem;
-  text-align: left;
-}
+    .resulttable td, th {
+        border: 1px solid #999;
+        padding: 0.5rem;
+        text-align: left;
+    }

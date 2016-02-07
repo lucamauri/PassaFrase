@@ -40,6 +40,13 @@ Invece di basarsi sulla complessità – di difficile memorizzazione e di facile
                 <asp:ListItem Value="4">4</asp:ListItem>
                 <asp:ListItem Value="5">5</asp:ListItem>
             </asp:DropDownList>
+                <br />
+                Maiuscole o minuscole?
+                <asp:DropDownList ID="dropdowncase" runat="server">
+                    <asp:ListItem Value="0">minuscolo</asp:ListItem>
+                    <asp:ListItem Value="1">MAIUSCOLO</asp:ListItem>
+                    <asp:ListItem Value="2" Selected="True">Iniziali Maiuscole</asp:ListItem>
+                </asp:DropDownList>
             </p>
             <asp:Button ID="BTNTest" runat="server" Text="Mostra frasi" />
             <%-- <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
@@ -50,11 +57,33 @@ Invece di basarsi sulla complessità – di difficile memorizzazione e di facile
             </asp:UpdatePanel>--%>
 
             <asp:Table ID="TableResults" CssClass="resulttable" runat="server" ToolTip="Tabella risultati"></asp:Table>
-            <asp:Button ID="BTNExport" runat="server" Text="Esporta" />            
+            <asp:Button ID="BTNExport" runat="server" Text="Esporta" />
+
+            <h3>Legenda</h3>
+            <asp:XmlDataSource ID="XmlSourceColDescr" runat="server" DataFile="/App_Data/coldescr.xml"></asp:XmlDataSource>
+
+            <details>
+                <summary>Visualizza i dettagli sulle colonne</summary>
+                <asp:Repeater ID="RPTColDescr" DataSourceID="XmlSourceColDescr" runat="server">
+                    <HeaderTemplate>
+                        <p>Nella tabella qui sopra, le colonne hanno questo significato:</p>
+                        <ul>
+                    </HeaderTemplate>
+                    <ItemTemplate>
+                        <li>
+                            <strong><%#XPath("label")%></strong><br />
+                            <%#XPath("description")%>
+                        </li>
+                    </ItemTemplate>
+                    <FooterTemplate>
+                        </ul>
+                    </FooterTemplate>
+                </asp:Repeater>
+            </details>
         </div>
     </div>
 
-    
+
 
 
 

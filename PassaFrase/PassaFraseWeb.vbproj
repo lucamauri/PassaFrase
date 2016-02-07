@@ -96,6 +96,8 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\coldescr.xml" />
+    <Content Include="pages\credits.aspx" />
     <Content Include="default.aspx" />
     <Content Include="graphics\favico\android-chrome-144x144.png" />
     <Content Include="graphics\favico\android-chrome-192x192.png" />
@@ -116,6 +118,7 @@
     <Content Include="graphics\favico\apple-touch-icon.png" />
     <Content Include="graphics\favico\browserconfig.xml" />
     <Content Include="graphics\favico\favicon-16x16.png" />
+    <Content Include="graphics\favico\favicon-194x194.png" />
     <Content Include="graphics\favico\favicon-32x32.png" />
     <Content Include="graphics\favico\favicon-96x96.png" />
     <Content Include="graphics\favico\favicon.ico" />
@@ -127,15 +130,25 @@
     <Content Include="graphics\favico\safari-pinned-tab.svg" />
     <Content Include="graphics\logo\PFLogo.png" />
     <Content Include="graphics\logo\PFLogo.svg" />
+    <Content Include="graphics\logo\PFLogoSQ.png" />
+    <Content Include="graphics\logo\PFLogoSQ.svg" />
     <Content Include="graphics\socialmedia\github.png" />
     <Content Include="graphics\socialmedia\githubblack.svg" />
     <Content Include="humans.txt" />
+    <Content Include="pages\tecnica.aspx" />
     <Content Include="templates\basic.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pages\credits.aspx.designer.vb">
+      <DependentUpon>credits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\credits.aspx.vb">
+      <DependentUpon>credits.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="default.aspx.designer.vb">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
@@ -161,6 +174,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pages\tecnica.aspx.designer.vb">
+      <DependentUpon>tecnica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\tecnica.aspx.vb">
+      <DependentUpon>tecnica.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="templates\basic.master.designer.vb">
       <DependentUpon>basic.master</DependentUpon>

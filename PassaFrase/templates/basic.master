@@ -19,32 +19,47 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/graphics/favico/apple-touch-icon-152x152.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/graphics/favico/apple-touch-icon-180x180.png" />
     <link rel="icon" type="image/png" href="/graphics/favico/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/graphics/favico/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="/graphics/favico/favicon-194x194.png" sizes="194x194" />
     <link rel="icon" type="image/png" href="/graphics/favico/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/graphics/favico/android-chrome-192x192.png" sizes="192x192" />
     <link rel="icon" type="image/png" href="/graphics/favico/favicon-16x16.png" sizes="16x16" />
     <link rel="manifest" href="/graphics/favico/manifest.json" />
-    <%--<link rel="mask-icon" href="/graphics/favico/safari-pinned-tab.svg" color="#5bbad5" />--%>
-    <link rel="mask-icon" href="/graphics/favico/safari-pinned-tab.svg" />
+    <link rel="mask-icon" href="/graphics/favico/safari-pinned-tab.svg" color="#5bbad5" />
     <link rel="shortcut icon" href="/graphics/favico/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#7aa229" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="msapplication-TileImage" content="/graphics/favico/mstile-144x144.png" />
     <meta name="msapplication-config" content="/graphics/favico/browserconfig.xml" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#fab900" />
     <!-- RealFaviconGenerator END -->
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <meta name="description" content="PassaFrase - An italian language passphrase generator" />
+    <meta name="description" content="PassaFrase - An italian language passphrase generator" lang="en-uk" />
+    <meta name="description" content="PassaFrase - Un generatore di passphrases in italiano" lang="it-it" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <%-- <div id="logotopbar" class="centered70pc">
-            <img src="../graphics/logo/PassaFrase.png" />
-        </div>--%>
+        <a href="https://github.com/lucamauri/PassaFrase"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" /></a>
+        <div id="containertopmenu" class="genericcontainer">
+            <div class="centered60pc" style="vertical-align:middle">
+                <object data="/graphics/logo/PFLogoSQ.svg" type="image/svg+xml" style="height: 40px">
+                    <img src="/graphics/logo/PFLogoSQ.png" style="height: 40px" />
+                </object>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="../pages/dizionari.aspx">Dizionari</a></li>
+                    <li><a href="../pages/presentazione.aspx">Presentazione</a></li>
+                    <li><a href="../pages/tecnica.aspx">Tecnica</a></li>
+                    <li><a href="../pages/credits.aspx">Credits</a></li>
+                    <li><a href="https://github.com/lucamauri/PassaFrase" target="_new">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+
         <div>
             <asp:ContentPlaceHolder ID="CPHWorker" runat="server">
             </asp:ContentPlaceHolder>
-        </div>        
+        </div>
         <div id="containergithub" class="genericcontainer">
             <div class="centered60pc">
                 <h2>Open source su <em>GitHub</em></h2>
@@ -54,27 +69,37 @@
                         Siete invitati a partecipare al progetto.
                     </p>
 
-                    <p><a href="http://lucamauri.github.io/LightroomPresets">http://lucamauri.github.io/LightroomPresets</a></p>
-<!-- GitHub buttons BEGIN -->
-                        <iframe seamless="seamless" src="https://ghbtns.com/github-btn.html?user=lucamauri&repo=LightroomPresets&type=star&count=true" style="border-width: 0; width: 170px; height: 20px; overflow: hidden"></iframe>
-                        <br />
-                        <iframe seamless="seamless" src="https://ghbtns.com/github-btn.html?user=lucamauri&repo=LightroomPresets&type=watch&count=true&v=2" style="border-width: 0; width: 170px; height: 20px; overflow: hidden"></iframe>
-                        <br />
-                        <iframe seamless="seamless" src="https://ghbtns.com/github-btn.html?user=lucamauri&repo=LightroomPresets&type=fork&count=true" style="border-width: 0; width: 170px; height: 20px; overflow: hidden"></iframe>
-                        <br />
-                        <iframe seamless="seamless" src="https://ghbtns.com/github-btn.html?user=lucamauri&type=follow&count=true" style="border-width: 0; width: 170px; height: 20px; overflow: hidden"></iframe>
-                        <!-- GitHub buttons END -->
+                    <p><a href="https://github.com/lucamauri/PassaFrase">https://github.com/lucamauri/PassaFrase</a></p>
+                    <!-- GitHub buttons BEGIN -->
+                    <iframe seamless="seamless" src="https://ghbtns.com/github-btn.html?user=lucamauri&repo=PassaFrase&type=star&count=true" style="border-width: 0; width: 170px; height: 20px; overflow: hidden"></iframe>
+                    <br />
+                    <iframe seamless="seamless" src="https://ghbtns.com/github-btn.html?user=lucamauri&repo=PassaFrase&type=watch&count=true&v=2" style="border-width: 0; width: 170px; height: 20px; overflow: hidden"></iframe>
+                    <br />
+                    <iframe seamless="seamless" src="https://ghbtns.com/github-btn.html?user=lucamauri&repo=PassaFrase&type=fork&count=true" style="border-width: 0; width: 170px; height: 20px; overflow: hidden"></iframe>
+                    <br />
+                    <iframe seamless="seamless" src="https://ghbtns.com/github-btn.html?user=lucamauri&type=follow&count=true" style="border-width: 0; width: 170px; height: 20px; overflow: hidden"></iframe>
+                    <!-- GitHub buttons END -->
                 </div>
                 <div class="halfadiv">
-                    <a href="https://github.com/lucamauri/LightroomPresets" class="svg">
-                        
-                            <object data="/graphics/socialmedia/githubblack.svg" type="image/svg+xml" style="height:250px">
-                                <img src="/graphics/socialmedia/github.png" />
-                            </object>
-                     
-                        
+                    <a href="https://github.com/lucamauri/PassaFrase" class="svg">
+
+                        <object data="/graphics/socialmedia/githubblack.svg" type="image/svg+xml" style="height: 250px">
+                            <img src="/graphics/socialmedia/github.png" style="height: 250px" />
+                        </object>
+
+
                     </a>
                 </div>
+            </div>
+        </div>
+
+        <div id="containerxkcd" class="genericcontainer">
+            <div class="centered60pc">
+                <h2>Dove tutto è iniziato</h2>
+                <p>Il grande pubblico ha preso coscienza del problema delle password e delle capacità delle <em>Pass-phrases</em> grazie a un fumetto</p>
+                <a href="http://xkcd.com/936/" target="_new">
+                    <img src="http://imgs.xkcd.com/comics/password_strength.png" /></a>
+                <p>Potete anche leggere maggiori informazioni su questa striscia sulla <a href="http://www.explainxkcd.com/wiki/index.php/936:_Password_Strength" target="_new">relativa pagina di ExplainXKCD</a> </p>
             </div>
         </div>
 
@@ -90,6 +115,8 @@
                     <a href="http://humanstxt.org/">Humans.txt</a><br />
                     <a href="../humans.txt">
                         <img src="http://humanstxt.org/img/oficial-logos/humanstxt-transparent-color.png" /></a>
+
+                    <a style="background: url(//emoji-codes.rankscominc.netdna-cdn.com/images/icon_github.png) no-repeat center; width: 91px;" href="https://github.com/lucamauri/PassaFrase" title="PassaFrase su Github">PassaFrase su Github</a>
                 </div>
             </div>
         </div>

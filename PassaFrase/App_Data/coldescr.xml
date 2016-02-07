@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<columns>
+  <column>
+    <label>PassPhrase</label>
+    <description>La frase completa</description>
+  </column>
+  <column>
+    <label>Bits</label>
+    <description>I bit di entropia</description>
+  </column>
+  <column>
+    <label>Massive</label>
+    <description>Tempo stimato di forzatura brutale in giorni assumendo un attacco offline massivo, ovvero circa 100 * 10^12 tentativi al secondo</description>
+  </column>
+  <column>
+    <label>Offline</label>
+    <description>Tempo stimato di forzatura brutale in giorni assumendo un attacco offline, ovvero circa 350 * 10^9 tentativi al secondo</description>
+  </column>
+  <column>
+    <label>Online</label>
+    <description>Tempo stimato di forzatura brutale in giorni assumendo un attacco online, ovvero circa 10^3 tentativi al secondo</description>
+  </column>
+  <column>
+    <label>MD5hash</label>
+    <description>Il digest in formato MD5 della PassPhrase</description>
+  </column>
+</columns>

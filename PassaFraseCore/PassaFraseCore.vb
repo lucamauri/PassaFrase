@@ -30,13 +30,13 @@ Public Class PassaFraseCore
     Public ReadOnly Property NumberOfSymbols As Integer
     Public ReadOnly Property CurrentLenght As Integer
     Public ReadOnly Property CurrentMD5Hash As String
-    'Public ReadOnly Property EstimatedTimeToGuessMassive As TimeSpan
-    'Public ReadOnly Property EstimatedTimeToGuessOffline As TimeSpan
-    'Public ReadOnly Property EstimatedTimeToGuessOnline As TimeSpan
+    Public ReadOnly Property CurrentWordsList As String()
 
     Public ReadOnly Property EstimatedTimeToGuessMassive As Single
     Public ReadOnly Property EstimatedTimeToGuessOffline As Single
     Public ReadOnly Property EstimatedTimeToGuessOnline As Single
+
+
 
     Sub New()
         'DizionarioContent = My.Resources.Dizionario.Split(Environment.NewLine).ToList
@@ -70,25 +70,23 @@ Public Class PassaFraseCore
     Function GeneratepassPhrase(WordsNumber As Integer, WordsCase As WordCase) As String
         Try
             Dim PassPhraseBuilder As New StringBuilder
+            Dim SingleWord As String
+
             _CurrentLenght = WordsNumber
             _NumberOfSymbols = DizionarioContent.Count * 3
+            ReDim _CurrentWordsList(WordsNumber)
 
             For Index As Integer = 1 To WordsNumber
-                PassPhraseBuilder.Append(GetRandomWord(WordsCase))
+                SingleWord = GetRandomWord(WordsCase)
+                PassPhraseBuilder.Append(SingleWord)
+                _CurrentWordsList(Index - 1) = SingleWord
             Next
 
             _CurrentPassPhrase = PassPhraseBuilder.ToString
             _CurrentBitsOfEntropy = Math.Log(_NumberOfSymbols, 2) * WordsNumber
             _CurrentCombinationNumber = _NumberOfSymbols ^ WordsNumber
             _currentmd5hash = ComputeMD5Hash(_CurrentPassPhrase)
-            '_EstimatedTimeToGuessMassive = New TimeSpan(_CurrentCombinationNumber / GuessesPerSecondMassive * 10 ^ 7)
-            '_EstimatedTimeToGuessOffline = New TimeSpan(_CurrentCombinationNumber / GuessesPerSecondOffline * 10 ^ 7)
 
-            'If (_CurrentCombinationNumber / GuessesPerSecondOnline * 10 ^ 7) > Int64.MaxValue Then
-            '    _EstimatedTimeToGuessOnline = New TimeSpan(Int64.MaxValue)
-            'Else
-            '    _EstimatedTimeToGuessOnline = New TimeSpan(_CurrentCombinationNumber / GuessesPerSecondOnline * 10 ^ 7)
-            'End If
             _EstimatedTimeToGuessMassive = _CurrentCombinationNumber / GuessesPerSecondMassive
             _EstimatedTimeToGuessOffline = _CurrentCombinationNumber / GuessesPerSecondOffline
             _EstimatedTimeToGuessOnline = _CurrentCombinationNumber / GuessesPerSecondOnline

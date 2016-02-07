@@ -1,4 +1,6 @@
-﻿
+﻿'==================================================================================================================================
+'This code is adapted from the C# implementation available at http://thinketg.com/how-to-generate-better-random-numbers-in-c-net-2/
+'==================================================================================================================================
 Imports System.Security.Cryptography
 '''<summary>
 ''' Represents a pseudo-random number generator, a device that produces random data.
