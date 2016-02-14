@@ -10,6 +10,14 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: white;
+    margin-top: 60px;
+    /*
+        font-family: "Source Sans Pro", sans-serif;
+    font-size: 13pt;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    */
 }
 
 h1 {
@@ -90,23 +98,25 @@ h2 a:active {
 }
 
 blockquote {
-  /*background: #1c1c1c;*/
-  border-left: 10px solid #fab900;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
+    /*background: #1c1c1c;*/
+    border-left: 10px solid #fab900;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
 }
-blockquote:before {
-  color: #b27c00;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-blockquote p {
-  display: inline;
-}
+
+    blockquote:before {
+        color: #b27c00;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    }
+
+    blockquote p {
+        display: inline;
+    }
 
 #footer {
     background-color: white;
@@ -146,10 +156,21 @@ blockquote p {
 
 #containerbottom {
     background-color: #fab900;
+    color: black;
 }
 
 #containertopmenu {
     background-color: #4a4a4a;
+    position: fixed;
+    margin-top: -60px;
+    height: 60px;
+    /*
+    background: rgba(74,74,74, 0.9);        
+    left: 0;
+    right: 0;
+    top: 0;
+    */
+    z-index: 90;
 }
 
     #containertopmenu ul {

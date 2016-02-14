@@ -68,12 +68,16 @@
     End Sub
 
     Protected Sub BTNExport_Click(sender As Object, e As EventArgs) Handles BTNExport.Click
-        With Response
-            .ContentType = "text/csv"
-            .AddHeader("Content-Disposition", "attachment; filename='PFExport.csv'")
-            .Write(ViewState("TableResultsState").ToString)
-            .Flush()
-            .End()
-        End With
+        If ViewState("TableResultsState") IsNot Nothing Then
+            With Response
+                .ContentType = "text/csv"
+                .AddHeader("Content-Disposition", "attachment; filename='PFExport.csv'")
+                .Write(ViewState("TableResultsState").ToString)
+                .Flush()
+                .End()
+            End With
+        Else
+            System.Web.HttpContext.Current.Response.Write("<SCRIPT LANGUAGE=""JavaScript"">alert(""Non è stata generata nessuna frase da esportare."")</SCRIPT>")
+        End If
     End Sub
 End Class

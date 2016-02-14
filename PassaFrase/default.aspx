@@ -83,26 +83,9 @@ Invece di basarsi sulla complessità – di difficile memorizzazione e di facile
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-    <h1>Come funziona</h1>
+    <%--<h1>Come funziona</h1>
     Si basa su un dizionario
     <h2>Cos'è una <em>passphrase</em></h2>
-    <h2>Cosa significano i valori</h2>
-
-
-
-
-
-
-
-
+    <h2>Cosa significano i valori</h2>--%>
 
 </asp:Content>
