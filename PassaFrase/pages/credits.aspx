@@ -16,6 +16,7 @@
                         <li><a href="http://telelinea.free.fr/italien/1000_parole.html" target="_blank">http://telelinea.free.fr/italien/1000_parole.html</a></li>
                     </ul>
                 </li>
+                <li>Una parte della grafica del sito viene dal progetto <em>Font Awesome</em> <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">http://fortawesome.github.io/Font-Awesome/</a>.</li>
             </ul>
         </div>
     </div>

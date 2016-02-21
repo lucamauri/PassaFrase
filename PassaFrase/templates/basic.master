@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>PassaFrase - Genera sicurezza, in italiano</title>
-    <link rel="stylesheet" type="text/css" href="basic.css" />    
+    <link rel="stylesheet" type="text/css" href="basic.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">    
     <link rel="author" href="../humans.txt" />
 
     <!-- RealFaviconGenerator START -->
@@ -60,7 +61,11 @@
                     </div>
             </div>
         </div>
-
+        <div id="containerwarning" class="genericcontainer">
+            <div class="centered60pc" style="vertical-align: middle">
+            <i class="fa fa-exclamation-triangle fa-3x fa-pull-left"></i><em>PassaFrase</em> è un progetto sperimentale che non risolve da solo il problema della sicurezza delle password ed è offerto senza garanzie esplicite o implicite.<br />L'utente deve usarlo con la consapevolezza che una password complessa è solo un anello della lunga catena della sicurezza.<br />Se operate in ambiente aziendale, consultatevi sempre con il vostro Responsabile IT prima di prendere l'iniziativa di usare questo o altri strumenti di terze parti.       
+            </div>
+        </div>
         <div>
             <asp:ContentPlaceHolder ID="CPHWorker" runat="server">
             </asp:ContentPlaceHolder>

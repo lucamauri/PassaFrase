@@ -173,17 +173,23 @@ blockquote {
     z-index: 90;
 }
 
-    #containertopmenu ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: inline-block;
-    }
+#containerwarning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    padding-top: 30px;
+}
 
-    #containertopmenu li {
-        float: left;
-        padding: 15px;
-    }
+#containertopmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+#containertopmenu li {
+    float: left;
+    padding: 15px;
+}
 
 
 .centered60pc {

@@ -5,9 +5,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="CPHWorker" runat="server">
     <div id="containerintro" class="genericcontainer">
         <div class="centered60pc">
-            <div class="halfadiv">
-                <object data="graphics/logo/PFLogo.svg" type="image/svg+xml">
-                    <img src="graphics/logo/PFLogo.png" />
+            <div class="halfadiv" >
+                <object data="graphics/logo/PFLogo.svg" type="image/svg+xml" style="max-width:95%">
+                    <img src="graphics/logo/PFLogo.png" style="max-width:95%" />
                 </object>
             </div>
             <div class="halfadiv">
